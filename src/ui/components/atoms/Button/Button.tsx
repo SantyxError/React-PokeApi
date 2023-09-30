@@ -1,13 +1,14 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { Button as ButtonComponent } from './Button.styled'
 
 type Props = {
   variant: 'primary' | 'secondary',
-  children: ReactNode
+  children: string,
+  onClick: () => void
 }
 
-export const Button: React.FC<Props> = ({ variant, children }) => {
+export const Button: React.FC<Props> = ({ variant, children, onClick }) => {
   return (
-    <ButtonComponent variant={variant} >{children}</ButtonComponent>
+    <ButtonComponent variant={variant} onClick={onClick}>{children}</ButtonComponent>
   )
 }

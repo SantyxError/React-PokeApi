@@ -7,7 +7,7 @@ describe("button component", () => {
     const variant = "primary"
     const children = "text primary"
 
-    render(<Button variant={variant}>{children}</Button>)
+    render(<Button variant={variant}  onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text primary");
 
@@ -18,7 +18,7 @@ describe("button component", () => {
     const variant = "primary"
     const children = "text primary"
 
-    render(<Button variant={variant}>{children}</Button>)
+    render(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text primary");
 
@@ -29,7 +29,7 @@ describe("button component", () => {
     const variant = "secondary"
     const children = "text secondary"
 
-    render(<Button variant={variant}>{children}</Button>)
+    render(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text secondary");
 
