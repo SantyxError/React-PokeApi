@@ -1,8 +1,9 @@
-interface Colors {
+/* interface Colors {
   primary: string;
   secondary: string;
   background: string;
-  text: string;
+  darkText: string;
+  lightText:string;
 }
 
 interface Typography {
@@ -25,10 +26,11 @@ interface SpacingTokens {
 
 const designTokens = {
   colors: {
-    primary: '#007bff',
-    secondary: '#6c757d',
-    background: '#f8f9fa',
-    text: '#333',
+    primary: '#f58949',
+    secondary: '#a34b37',
+    background: 'linear-gradient(180deg, rgba(253,250,243,1) 0%, rgba(243,226,208,1) 50%, rgba(162,132,124,1) 100%)',
+    darkText: '#000000',
+    lightText: '#ffffff'
   } as Colors,
   typography: {
     fontFamily: 'Arial, sans-serif',
@@ -48,4 +50,4 @@ const designTokens = {
 }
 
 
-export default designTokens;
+export default designTokens; */
