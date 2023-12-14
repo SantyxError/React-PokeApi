@@ -2,7 +2,7 @@ import React from "react";
 import { Button as ButtonComponent } from "./Button.styled";
 
 type Props = {
-  variant: "primary" | "secondary";
+  variant: "primary" | "secondary" | 'terciary';
   children: string;
   onClick?: () => void;
 };

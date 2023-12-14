@@ -23,3 +23,10 @@ export const Secondary: Story = {
     children: "text secondary"
   }
 };
+
+export const Terciary: Story = {
+  args: {
+    variant: "terciary",
+    children: "text terciary"
+  }
+};
