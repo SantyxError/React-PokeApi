@@ -2,6 +2,9 @@
   "name": "poke_api",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,6 +32,7 @@
     "@storybook/addon-interactions": "^7.4.2",
     "@storybook/addon-links": "^7.4.2",
     "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-themes": "^7.6.4",
     "@storybook/blocks": "^7.4.2",
     "@storybook/nextjs": "^7.4.2",
     "@storybook/react": "^7.4.2",

@@ -1,13 +1,14 @@
 import React from "react"
-import { render, screen } from '@testing-library/react';
+import {  screen } from '@testing-library/react';
 import { Button } from "../Button"
+import { renderProvider } from "@/__tests__";
 
 describe("button component", () => {
   it("should render a button", () => {
     const variant = "primary"
     const children = "text primary"
 
-    render(<Button variant={variant}  onClick={jest.fn()}>{children}</Button>)
+    renderProvider(<Button variant={variant}  onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text primary");
 
@@ -18,7 +19,7 @@ describe("button component", () => {
     const variant = "primary"
     const children = "text primary"
 
-    render(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
+    renderProvider(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text primary");
 
@@ -29,10 +30,21 @@ describe("button component", () => {
     const variant = "secondary"
     const children = "text secondary"
 
-    render(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
+    renderProvider(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
 
     const buttonElement = screen.getByText("text secondary");
 
     expect(buttonElement).toHaveAttribute("variant", "secondary")
+  })
+
+  it("should render a button with its terciary variant", () => {
+    const variant = "terciary"
+    const children = "text terciary"
+
+    renderProvider(<Button variant={variant} onClick={jest.fn()}>{children}</Button>)
+
+    const buttonElement = screen.getByText("text terciary");
+
+    expect(buttonElement).toHaveAttribute("variant", "terciary")
   })
 })

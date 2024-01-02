@@ -1,4 +1,7 @@
 import type { Preview } from "@storybook/react";
+import { ThemeDecorator } from "./decorators";
+
+export const decorators = [ThemeDecorator];
 
 const preview: Preview = {
   parameters: {
