@@ -1,5 +1,12 @@
 import React from "react";
-import { Wrapper, Image, InfoWrapper, Info, Category } from "./Card.styled";
+import {
+  Wrapper,
+  Image,
+  InfoWrapper,
+  Category,
+  Name,
+  Features,
+} from "./Card.styled";
 
 type Props = {
   image: string;
@@ -13,10 +20,15 @@ export const Card: React.FC<Props> = ({ image, name, category }) => {
       <Image src={`${image}`} alt={name} />
 
       <InfoWrapper>
-        <Info>
-          <h3>{name}</h3>
-          <div>feature</div>
-        </Info>
+        <div>
+          <Name>{name}</Name>
+          <Features>
+            <li>Weigth</li>
+            <li>Specie</li>
+            <li>Height</li>
+            <li>Skill</li>
+          </Features>
+        </div>
 
         <Category>{category}</Category>
       </InfoWrapper>

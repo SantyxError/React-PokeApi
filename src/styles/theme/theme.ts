@@ -4,6 +4,7 @@ interface DefaultTheme {
     secondary: string;
     white: string;
     black: string;
+    wheat: string;
   };
 
   gradient: {
@@ -41,6 +42,7 @@ export const theme: DefaultTheme = {
     secondary: "#a34b37",
     white: "#ffffff",
     black: "#000000",
+    wheat: "#fee6cc",
   },
   gradient: {
     background:
