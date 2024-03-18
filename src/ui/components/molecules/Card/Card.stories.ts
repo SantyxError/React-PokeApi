@@ -13,7 +13,13 @@ type Story = StoryObj<typeof Card>;
 export const Playground: Story = {
   args: {
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png",
-    name: "Psyduck"
+    name: "Psyduck",
+    info: {
+      weight: "5Kg",
+      height: "120cm",
+      specie: "psíquico/agua",
+      skill: "Confusión"
+    }
   }
 };
 

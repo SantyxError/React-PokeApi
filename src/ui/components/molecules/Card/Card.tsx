@@ -1,20 +1,32 @@
 import React from "react";
-import { Wrapper, ImageWrapper, TextWrapper } from "./Card.styled";
+import { Wrapper, ImageWrapper, TextWrapper, Image, InfoWrapper,ItemList, Name } from "./Card.styled";
 
 type Props = {
   image: string;
   name: string;
+  info: {
+    weight: string;
+    height: string;
+    specie: string;
+    skill: string;
+  }
 };
 
-export const Card: React.FC<Props> = ({ image, name }) => {
+export const Card: React.FC<Props> = ({ image, name, info }) => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <img src={`${image}`} />
+        <Image src={`${image}`} />
       </ImageWrapper>
       <TextWrapper>
-        <p>{name}</p>
+        <Name>{name}</Name>
       </TextWrapper>
+      <InfoWrapper>
+          <ItemList>{info.height}</ItemList>
+          <ItemList>{info.weight}</ItemList>
+          <ItemList>{info.specie}</ItemList>
+          <ItemList>{info.skill}</ItemList>
+      </InfoWrapper>
     </Wrapper>
   );
 };

@@ -17,10 +17,9 @@ const COLOR = {
 };
 
 export const Button = styled.button<{ variant: "primary" | "secondary" | 'terciary' }>`
-  ${({ variant }) => variant && COLOR[variant]}
+  ${({ variant }) => COLOR[variant]}
   border-radius: ${({ theme }) => theme.borderRadius.xl};
   border: unset;
   padding: ${({ theme }) => theme.spacing.m} ${({ theme }) => theme.spacing.l};
   font-weight: bold;
- 
 `;
