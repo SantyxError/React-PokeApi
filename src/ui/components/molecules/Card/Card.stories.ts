@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Card } from './Card';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Card } from "./Card";
 
 const meta: Meta<typeof Card> = {
   component: Card,
   title: "molecules/Card",
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 };
 
 export default meta;
@@ -22,4 +22,3 @@ export const Playground: Story = {
     }
   }
 };
-
