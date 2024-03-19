@@ -17,8 +17,9 @@ export const Playground: Story = {
     info: {
       weight: "5Kg",
       height: "120cm",
-      specie: "psíquico/agua",
+      specie: "pato",
       skill: "Confusión"
-    }
+    },
+    type: "Psíquico/Agua"
   }
 };

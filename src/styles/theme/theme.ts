@@ -20,6 +20,10 @@ interface DefaultTheme {
     m: string;
     l: string;
     xl: string;
+    xxl: string;
+    xxxl: string;
+    xxxxl: string;
+    xxxxxl: string;
   };
 
   borderRadius: {
@@ -59,7 +63,11 @@ export const theme: DefaultTheme = {
     s: '0.5rem',
     m: '1rem',
     l: '1.5rem',
-    xl: '2rem'
+    xl: '2rem',
+    xxl: '3rem',
+    xxxl: '4rem',
+    xxxxl: '5rem',
+    xxxxxl: '5.5rem'
   },
   borderRadius: {
     xs: "4px",
