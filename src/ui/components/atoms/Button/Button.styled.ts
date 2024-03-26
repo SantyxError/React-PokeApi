@@ -13,7 +13,6 @@ const COLOR = {
     background-color: ${({ theme }) => theme.color.white};
     color:${({ theme }) => theme.color.black};
   `,
-
 };
 
 export const Button = styled.button<{ variant: "primary" | "secondary" | 'terciary' }>`
